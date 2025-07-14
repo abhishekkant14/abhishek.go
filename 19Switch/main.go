@@ -1,17 +1,14 @@
 package main
-
 import "fmt"
 
 func main() {
-	sum := 0
 
-	for i := 1; i <= 10; i++ {
-		switch i {
-		case 1, 2, 3, 4, 5, 6, 7, 8, 9, 10:
-			sum += i
-		default:
-		}
-	}
+evenumber:=0
+oddnumber:=0
+for i:=1; i<=10; i++{
+switch 1 % 2
+case 0:
+	fmt.Println(i,"even")
 
-	fmt.Println("Sum using switch case from 1 to 10 is:", sum)
+}
 }
