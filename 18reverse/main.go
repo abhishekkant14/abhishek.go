@@ -3,12 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	Name := "Abhishek"
-	var ReverseName string
+	Name := "ABHISHEK"
+	var Reverse string
+
 	for i := 0; i < len(Name); i++ {
-
-		ReverseName = string(Name[i]) + ReverseName
-
+		Reverse = string(Name[i]) + Reverse
 	}
-	fmt.Println("ReverseName Is:", ReverseName)
+
+	fmt.Println("Reverse Name Is:", Reverse)
+
 }
