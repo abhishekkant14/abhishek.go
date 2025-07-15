@@ -1,21 +1,23 @@
 package main
 
 import "fmt"
-func main () {
+func main() {
 
-	evenNumber:=0
-	oddNumber:=0
+	evennumber:=0
+	oddnumber:=0
 	for i:=1; i<=10; i++ {
-		switch i % 2 {
-		case 0:
-			fmt.Println(i,"even")
-			evenNumber++
+    switch i % 2 {
+	case 0:
+		fmt.Println(i,"Even")
+		evennumber++
+		
+	case 1:
+		fmt.Println(i,"oddnumber")
+		oddnumber++
 
-		case 1:
-			fmt.Println(i,"odd")
-			oddNumber++
-		}
 	}
-	fmt.Println("Total evenumber is:",evenNumber)
-	fmt.Println("Total oddNumber is:",oddNumber)
+
+	}
+	fmt.Println("Evennumber Is:",evennumber)
+	fmt.Println("Oddnumber is:", oddnumber)
 }
