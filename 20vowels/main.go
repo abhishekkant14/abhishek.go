@@ -4,21 +4,23 @@ import (
 	"fmt"
 	"strings"
 )
-func main () {
 
-	Input:="Abhishek"
-	vowels:=""
-	count:=0
+func main() {
+	input := "Abhishek"
+	vowels := ""
+	count := 0
 
-for _,char:=range Input {
-switch strings.ToLower(string(char)) {
+	for _, char := range input {
 
-case "a", "e", "i", "o", "u":
-   vowels += string(char) 
-	count++
-}
-}
+		switch strings.ToLower(string(char)) {
 
-fmt.Println("Vowels are:", vowels)
-	fmt.Println("Count:", count)
+		case "a", "e", "i", "o", "u":
+
+			vowels += string(char)
+			count++
+
+		}
+	}
+	fmt.Println("vowels are", vowels)
+	fmt.Println("count is", count)
 }
