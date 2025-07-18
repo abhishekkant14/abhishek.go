@@ -5,22 +5,23 @@ import (
 	"io"
 	"os"
 )
+
 func main() {
-//while creating file
-	file,err:=os.Create("Abhishek.text")
-	if err !=nil {
-		fmt.Println("err while creatin file", err)
+	file, err := os.Create("Hello Abhishek")
+	if err != nil {
+	defer	fmt.Println("Err While Creating", err)
+
 		return
-	
 	}
-	defer file.Close()
+	
+	 fmt.Println("file creation done")
 
-  fmt.Println("file creation sucessful done")
+	//while writing file
+	data := "Hello Abhishek Welocome to the Go Lang"
+	_,eror := io.WriteString(file,data + "\n")
+	if eror != nil {
 
-//while Writing file
-contant := "Hello @abhishek welocome to Go Lang"
-_,errors:=io.WriteString(file,contant+"\n")
-if errors !=nil {
-fmt.Println("Errors while writing file",errors)
-}
+		fmt.Println("Err while write ")
+	}
+
 }

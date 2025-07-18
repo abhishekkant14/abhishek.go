@@ -10,8 +10,7 @@ func main() {
 	number := 60
 	
 	var ptr = &number
-
-	fmt.Println("tHe Value of Number", ptr)
+fmt.Println("tHe Value of Number", ptr)
     fmt.Println("tHe Value of Number", *ptr)
 
 }
