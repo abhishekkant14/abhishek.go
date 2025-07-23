@@ -2,12 +2,18 @@ package main
 
 import "fmt"
 
-func function() {
-fmt.Println("function")
-
-}
+func add(a int, b int) int {
+	return a + b}
+	
+	func multiply(x int, y int ) (result int) {
+ result =x * y 
+return }
 
 func main() {
+	fmt.Println("Hello, we are learning Functions in Go Lang")
+	result := add(5, 7)
+	fmt.Println("Sum is:", result)
 
-	fmt.Println("We are learning function in the go")
+	output := multiply(7, 8)
+	fmt.Println("output is",output)
 }
